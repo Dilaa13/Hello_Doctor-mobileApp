@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ArticlesActivity"
+    android:padding="16dp">
+
+    <!-- Existing Logo Image -->
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="202dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo_hellodoctor" />
+
+    <!-- Article Title -->
+    <TextView
+        android:id="@+id/articleTitleTextView"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="10 Essential Tips for Maintaining a Healthy Lifestyle"
+        android:textAlignment="center"
+        android:textColor="@android:color/black"
+        android:textSize="20sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/img1" />
+
+    <!-- ScrollView for Article Content -->
+    <ScrollView
+        android:id="@+id/articleScrollView"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintTop_toBottomOf="@id/articleTitleTextView"
+        app:layout_constraintBottom_toTopOf="@+id/backButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp">
+
+        <TextView
+            android:id="@+id/articleContentTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:textColor="@android:color/black"
+            android:lineSpacingExtra="8dp"
+            android:text="In today's fast-paced world, maintaining a healthy lifestyle is more important than ever. Whether you're looking to improve your overall well-being, prevent chronic diseases, or simply feel better in your day-to-day life, these essential tips can help you stay on track.\n\n1. Eat a Balanced Diet\nA balanced diet is crucial for good health. Include a variety of fruits, vegetables, whole grains, and lean proteins in your daily meals. Avoid processed foods and high-sugar snacks, as they can lead to weight gain and other health issues.\n\n2. Stay Hydrated\nDrinking enough water is essential for your body's functions, including digestion, circulation, and temperature regulation. Aim to drink at least 8 glasses of water a day. Herbal teas and water-rich foods like cucumbers and oranges can also contribute to your daily hydration needs.\n\n3. Get Regular Exercise\nPhysical activity is vital for maintaining a healthy weight, reducing stress, and improving cardiovascular health. Aim for at least 150 minutes of moderate aerobic activity or 75 minutes of vigorous activity each week, along with strength training exercises on two or more days a week.\n\n4. Prioritize Sleep\nGetting enough quality sleep is crucial for your mental and physical health. Adults should aim for 7-9 hours of sleep per night. Create a bedtime routine, avoid caffeine and screens before bed, and ensure your sleep environment is comfortable and quiet.\n\n5. Manage Stress\nChronic stress can take a toll on your health, leading to issues like heart disease, depression, and digestive problems. Practice stress management techniques such as meditation, deep breathing, yoga, or simply taking time each day to relax and unwind.\n\n6. Maintain Regular Health Checkups\nRegular checkups with your healthcare provider can help catch potential health issues early, when they're most treatable. Make sure to keep up with routine screenings and immunizations, and don't hesitate to discuss any health concerns with your doctor.\n\n7. Limit Alcohol and Avoid Smoking\nExcessive alcohol consumption can lead to a variety of health problems, including liver disease and cancer. If you drink alcohol, do so in moderation. Additionally, smoking is a leading cause of preventable disease and death. Quitting smoking is one of the best things you can do for your health.\n\n8. Cultivate Healthy Relationships\nStrong social connections are linked to better mental and physical health. Nurture relationships with family, friends, and your community. Having a support system can help you manage stress and feel happier overall.\n\n9. Practice Safe Sun Exposure\nWhile some sun exposure is beneficial for vitamin D production, too much can increase your risk of skin cancer. Protect your skin by wearing sunscreen with an SPF of at least 30, seeking shade during peak sun hours, and wearing protective clothing.\n\n10. Stay Informed\nHealthcare is constantly evolving, and staying informed about the latest health recommendations and guidelines can help you make the best choices for your well-being. Follow trusted health sources, and don't hesitate to ask your healthcare provider for advice tailored to your specific needs.\n\nBy incorporating these tips into your daily routine, you can take proactive steps towards a healthier, happier life. Remember, small changes can lead to big results over time, so start today and make your health a priority."
+            android:layout_marginBottom="16dp" />
+
+
+    </ScrollView>
+
+    <!-- Back Button -->
+    <Button
+        android:id="@+id/backButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Back"
+        android:textSize="16sp"
+        android:padding="8dp"
+        android:background="?android:attr/selectableItemBackground"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginBottom="12dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

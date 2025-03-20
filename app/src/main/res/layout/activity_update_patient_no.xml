@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Enter the Number of Patients who have come so far:" />
+
+    <EditText
+        android:id="@+id/etNumPatientsSoFar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Patients So Far"
+        android:inputType="number" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Enter the Current Patient Number:" />
+
+    <EditText
+        android:id="@+id/etCurrentPatientNo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Current Patient Number"
+        android:inputType="number" />
+
+    <Button
+        android:id="@+id/btnUpdatePatientNo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Update Patient Numbers" />
+
+    <Button
+        android:id="@+id/btnViewCurrentPatient"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="View Number" />
+
+    <TextView
+        android:id="@+id/tvPatientNumbers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp" />
+
+</LinearLayout>

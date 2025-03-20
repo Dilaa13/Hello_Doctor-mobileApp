@@ -1,0 +1,216 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="16dp"
+    android:background="@drawable/b2">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <!-- User Profile Picture, Menu Icon, and Logo -->
+        <ImageView
+            android:id="@+id/img1"
+            android:layout_width="171dp"
+            android:layout_height="53dp"
+            android:layout_below="@id/userProfilePic"
+            android:layout_alignParentStart="true"
+            android:layout_marginTop="8dp"
+            android:layout_marginStart="150dp"
+            app:srcCompat="@drawable/logotipo_hellodoctor" />
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="16dp">
+
+            <ImageView
+                android:id="@+id/userProfilePic"
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_marginStart="5dp"
+                android:layout_marginTop="0dp"
+                android:background="@drawable/box_border"
+                android:contentDescription="@string/user_profile_picture"
+                android:scaleType="centerCrop"
+                android:src="@drawable/baseline_person_24" />
+        </RelativeLayout>
+
+        <!-- Search Bar -->
+        <!-- (Your Search Bar code would go here if you have one) -->
+
+        <!-- Appointments and Other Options -->
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:columnCount="2"
+            android:rowCount="2"
+            android:layout_marginBottom="16dp"
+            android:columnOrderPreserved="false">
+
+            <LinearLayout
+                android:id="@+id/appointmentsLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@color/white"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_appointment"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/appointments_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Appointments"
+                    android:textColor="@color/Secondary_clr"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/logoutLayout"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_columnWeight="1"
+            android:orientation="vertical"
+            android:padding="16dp"
+            android:background="@drawable/button_background"
+            android:layout_margin="8dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/logout_24"
+            android:layout_gravity="center_horizontal"
+            android:contentDescription="@string/ask_doctor_icon" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Log Out"
+            android:textColor="@android:color/black"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="8dp" />
+    </LinearLayout>
+
+    <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_article_24"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/special_visit_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Article"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:orientation="vertical"
+                android:padding="16dp"
+                android:background="@drawable/button_background"
+                android:layout_margin="8dp">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/baseline_add_call_24"
+                    android:layout_gravity="center_horizontal"
+                    android:contentDescription="@string/emergency_call_icon" />
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Emergency Call"
+                    android:textColor="@android:color/black"
+                    android:textStyle="bold"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="8dp" />
+            </LinearLayout>
+        </GridLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Book a Doctor Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Book a Doctor"
+                android:textColor="@android:color/black"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Filter"
+                android:textColor="#4CAF50"
+                android:layout_marginBottom="16dp"
+                android:layout_gravity="end"
+                android:textStyle="bold" />
+
+            <!-- TextView for No Doctors Available -->
+            <TextView
+                android:id="@+id/textViewNoDoctors"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone"
+                android:textSize="18sp"
+                android:textColor="@android:color/black"/>
+
+            <!-- RecyclerView for displaying the list of doctors -->
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerViewDoctors"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:clipToPadding="false"
+                android:paddingBottom="16dp" />
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

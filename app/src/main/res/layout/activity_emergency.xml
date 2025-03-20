@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    android:background="#FFFFFF">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_margin="16dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="8dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="50dp">
+
+            <!-- Title -->
+
+            <!-- Emergency Contacts Title -->
+
+            <!-- Hotline Number -->
+            <TextView
+                android:id="@+id/textViewHotline"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp"
+                android:text="Hotline Number: 123-456-789"
+                android:textAlignment="center"
+                android:textColor="#FF0000"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+
+            <!-- Emergency Services -->
+            <TextView
+                android:id="@+id/textViewEmergencyServices"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewHotline"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="64dp"
+                android:text="Emergency Services: 911"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Medical Help -->
+            <TextView
+                android:id="@+id/textViewMedicalHelp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewEmergencyServices"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Medical Help: 234-567-8901"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Fire Department -->
+            <TextView
+                android:id="@+id/textViewFireDepartment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewMedicalHelp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="8dp"
+                android:text="Fire Department: 345-678-9012"
+                android:textAlignment="center"
+                android:textColor="#000000"
+                android:textSize="18sp" />
+
+            <!-- Contact Button -->
+            <Button
+                android:id="@+id/buttonContact"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/textViewFireDepartment"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="44dp"
+                android:text="Contact Now" />
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="171dp"
+        android:layout_height="53dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="17dp"
+        app:srcCompat="@drawable/logotipo_hellodoctor" />
+
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/img1"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="76dp"
+        android:layout_marginTop="18dp"
+        android:text="Emergency Contacts"
+        android:textAlignment="center"
+        android:textColor="#000000"
+        android:textSize="24sp"
+        android:textStyle="bold|italic" />
+</RelativeLayout>

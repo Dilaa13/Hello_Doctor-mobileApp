@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:material="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".CreateAppointmentDct">
+
+    <!-- Title TextView -->
+    <TextView
+        android:id="@+id/textViewTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Create Appointment"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- Hospital Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutHospital"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/textViewTitle"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextHospital"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Hospital" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Date Selection -->
+    <TextView
+        android:id="@+id/textViewSelectDate"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="8dp"
+        android:text="Select Date"
+        android:textSize="18sp"
+        android:textColor="@android:color/black"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutHospital"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5" />
+
+    <!-- Start Time Input -->
+    <Button
+        android:id="@+id/buttonSelectDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="392dp"
+        android:text="Select Date"
+        android:textSize="16sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.592"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/textViewSelectDate" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutStartTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/buttonSelectDate"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextStartTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Start Time"
+            android:inputType="time" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- End Time Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutEndTime"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutStartTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextEndTime"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="End Time"
+            android:inputType="time" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Number of Patients Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutNumberOfPatients"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutEndTime"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumberOfPatients"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Patients"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Number of Reports Input -->
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/inputLayoutNumberOfReports"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutNumberOfPatients"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/editTextNumberOfReports"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Number of Reports"
+            android:inputType="number" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- View Time Slots Button -->
+    <Button
+        android:id="@+id/buttonViewTimeSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="View Time Slots"
+        android:layout_marginTop="24dp"
+        app:layout_constraintTop_toBottomOf="@id/inputLayoutNumberOfReports"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/buttonSubmit" />
+
+    <!-- Submit Button -->
+    <Button
+        android:id="@+id/buttonSubmit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"
+        android:text="Submit"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
+        app:layout_constraintTop_toBottomOf="@id/buttonViewTimeSlots"
+        app:layout_constraintVertical_bias="0.573" />
+
+    <!-- Cancel Button -->
+    <Button
+        android:id="@+id/buttonCancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:text="Cancel"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.849"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/buttonSubmit" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

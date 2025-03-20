@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/b2"
+    android:padding="16dp"
+    tools:context=".CurrentActivity">
+
+    <!-- ImageView for the logo -->
+    <ImageView
+        android:id="@+id/img1"
+        android:layout_width="181dp"
+        android:layout_height="48dp"
+        android:layout_marginTop="12dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.947"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/logotipo_hellodoctor" />
+
+    <!-- TextView for displaying "Hello Doctor ID" greeting -->
+    <TextView
+        android:id="@+id/textViewWelcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="Hello Doctor ID"
+        android:textSize="24sp"
+        android:textColor="@color/black"
+        app:layout_constraintTop_toBottomOf="@id/img1"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <!-- LinearLayout for displaying doctor details -->
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="758dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewWelcome">
+
+        <TextView
+            android:id="@+id/textViewNameDetail"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:text="Name"
+            android:textColor="@color/lavender"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewID"
+            android:layout_width="292dp"
+            android:layout_height="wrap_content"
+            android:text="ID"
+            android:textColor="@color/lavender"
+            android:textSize="26sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textViewSpecialtyDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:text="Specialty"
+            android:textColor="#CFBD1A"
+            android:textSize="20sp" />
+
+    </LinearLayout>
+
+    <!-- LinearLayout for displaying doctor contact details -->
+    <LinearLayout
+        android:id="@+id/linearLayout3"
+        android:layout_width="758dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="40dp"
+        android:orientation="vertical"
+        android:padding="5dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <TextView
+            android:id="@+id/textViewPhoneDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Phone"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/textViewEmailDetail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:text="Email"
+            android:textSize="18sp" />
+    </LinearLayout>
+
+    <!-- Button for viewing appointments or other actions -->
+    <Button
+        android:id="@+id/btnAddTimeSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="Add Time Slots"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout3" />
+
+    <!-- New Button for Viewing Time Slots -->
+    <Button
+        android:id="@+id/btnViewTimeSlots"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="196dp"
+        android:text="View Time Slots"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.522"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/btnAddTimeSlots" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

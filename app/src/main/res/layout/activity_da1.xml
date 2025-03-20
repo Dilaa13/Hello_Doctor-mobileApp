@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:id="@+id/tvDoctorID"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Doctor ID"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="16dp"/>
+    <EditText
+        android:id="@+id/etTimeID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Time ID"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_marginBottom="16dp"
+        android:inputType="text"/>
+    <TextView
+        android:id="@+id/tvSelectDate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Select Date"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:textSize="16sp"
+        android:layout_marginBottom="16dp"/>
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_marginBottom="16dp"
+        android:focusable="false"/>
+
+    <EditText
+        android:id="@+id/etNumPatients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Patients"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_marginBottom="16dp"
+        android:inputType="number"/>
+
+    <EditText
+        android:id="@+id/etNumReports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Reports"
+        android:padding="10dp"
+        android:background="@drawable/bg_edit_text"
+        android:layout_marginBottom="16dp"
+        android:inputType="number"/>
+
+    <!-- New EditText for Time ID -->
+
+
+    <Button
+        android:id="@+id/btnSubmit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Submit"
+        android:layout_marginTop="16dp"/>
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Cancel"
+        android:layout_marginTop="8dp"/>
+</LinearLayout>

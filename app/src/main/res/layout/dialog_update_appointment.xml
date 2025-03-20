@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <EditText
+        android:id="@+id/etStartTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Start Time"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etEndTime"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="End Time"
+        android:inputType="time" />
+
+    <EditText
+        android:id="@+id/etNumPatients"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Patients"
+        android:inputType="number" />
+
+    <EditText
+        android:id="@+id/etNumReports"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Number of Reports"
+        android:inputType="number" />
+
+</LinearLayout>
